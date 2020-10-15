@@ -2,10 +2,35 @@
 <html>
     <head>
         <title>Something</title>
+        <meta charset="utf-8"/>     <!-- 이모지 사용을 위해 사용 -->
         <link rel="stylesheet" href="index.css"/>
+
     </head>
     <body>
-        <h1 id="title">This Works!</h1>
-        <script src="index.js"></script>
+        <!-- 시간 표시 div-->
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+
+        <!-- 이름 입력하는 폼 -->
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?"/>
+        </form>
+
+        <!-- hello 사용자 표시하는 제목 태그 -->
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do"> 
+        </form>
+        <ul class="js-toDoList">   
+                <!-- 이부분에 li 친구들이 동적 생성 시킬꺼 --> 
+        </ul>
+        <span class="js-weather"></span>
+        <script src="clock.js"></script>
+        <script src="gretting.js"></script> 
+        <script src="todo.js"></script>
+        <script src="bg.js"></script>
+        <script src="weather.js"></script>
     </body>
 </html>
+
